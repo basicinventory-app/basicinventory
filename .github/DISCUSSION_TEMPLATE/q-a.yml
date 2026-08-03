@@ -1,0 +1,48 @@
+title: "[Q&A]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away. Please keep licence keys, invoices, personal data and database backups out of the thread — this is public.
+
+  - type: input
+    id: version
+    attributes:
+      label: BasicInventory version
+      description: Settings → Errors and diagnostics → Version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Topic
+      options:
+        - Installation and updates
+        - Products, categories and locations
+        - Stock, movements, lots and expiry
+        - Boxes vs pallets
+        - Backups and restore
+        - Export to Excel
+        - AI assistant
+        - Licensing and purchase
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need to do?
+      description: Describe the goal, not only the step you are stuck on — there may be a better route.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+    validations:
+      required: false

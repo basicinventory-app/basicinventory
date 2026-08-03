@@ -1,0 +1,46 @@
+# Documentation is the product here, so a dead link is a real defect. Runs on
+# every documentation change and monthly, to catch links that rot on their own.
+name: Check documentation links
+
+on:
+  push:
+    branches: [main]
+    paths: ["**/*.md"]
+  pull_request:
+    paths: ["**/*.md"]
+  schedule:
+    - cron: "0 5 1 * *" # first day of the month, 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Skip the store links that are still placeholders, and GitHub URLs
+          # that only exist once the first issue/discussion is created.
+          args: >-
+            --no-progress
+            --max-retries 2
+            --exclude-path docs/images
+            --exclude "^https://github\.com/basicinventory-app/basicinventory/(discussions|milestones|security)"
+            --exclude "^https://img\.shields\.io"
+            "**/*.md"
+          fail: false
+
+      - name: Open an issue when links are broken
+        if: env.lychee_exit_code != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken links in the documentation
+          content-filepath: ./lychee/out.md
+          labels: documentation

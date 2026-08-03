@@ -1,0 +1,34 @@
+# Keeps the tracker honest: an issue waiting on information the reporter never
+# sent is closed politely instead of sitting open for a year. Anything the
+# maintainer has accepted (planned, in progress, pinned) is never touched.
+name: Close stale issues
+
+on:
+  schedule:
+    - cron: "30 4 * * 1" # Mondays, 04:30 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 30
+          days-before-close: 14
+          stale-issue-label: stale
+          exempt-issue-labels: "planned,in progress,bug,security,pinned"
+          exempt-all-milestones: true
+          operations-per-run: 60
+          stale-issue-message: >
+            This issue has had no activity for 30 days. If it is still relevant,
+            a comment with any new detail keeps it open — otherwise it will be
+            closed in 14 days. Closed issues can always be reopened.
+          close-issue-message: >
+            Closing after 44 days without activity. This is housekeeping, not a
+            judgement on the request: comment and it reopens.
+          # Feature requests are not stale just because they are queued.
+          only-labels: "needs info,question,support"

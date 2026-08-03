@@ -1,0 +1,76 @@
+name: ❓ Question
+description: Ask about how something works, when Discussions is not a fit
+title: "[Question]: "
+labels: ["question", "support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **[Discussions → Q&A](https://github.com/basicinventory-app/basicinventory/discussions/categories/q-a) is usually the better place**: other users can answer, and the thread stays searchable.
+
+        Use this form when the question is likely to turn into a bug report or a documented change.
+        Check the [documentation](https://github.com/basicinventory-app/basicinventory/tree/main/docs) and the [FAQ](https://github.com/basicinventory-app/basicinventory#faq) first.
+
+        This issue is public: no licence keys, invoices, personal data or backups.
+
+  - type: input
+    id: version
+    attributes:
+      label: BasicInventory version
+      description: Settings → Errors and diagnostics → Version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11 (64-bit)
+        - Windows 10 (64-bit)
+        - Windows Server 2019 / 2022
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is it about?
+      options:
+        - Installation or updates
+        - Products, categories or locations
+        - Stock, movements, lots and expiry
+        - Boxes vs pallets management mode
+        - Backups and restore
+        - Export to Excel
+        - AI assistant
+        - Licensing and purchase
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to achieve, and where did you get stuck?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      description: Screens you looked at, documentation you read, searches you ran.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Blur anything confidential — this issue is public.
+    validations:
+      required: false

@@ -1,0 +1,23 @@
+# Blank issues are disabled on purpose: an issue without a version, steps and a
+# log costs more time in questions than it saves in typing.
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question (Q&A)
+    url: https://github.com/basicinventory-app/basicinventory/discussions/categories/q-a
+    about: How do I…? Other users and the maintainer answer here, and the answer stays searchable.
+
+  - name: 🧠 Share an idea before formalising it
+    url: https://github.com/basicinventory-app/basicinventory/discussions/categories/ideas
+    about: Discuss a possible improvement first. Ideas with traction become feature requests.
+
+  - name: 🔐 Report a security vulnerability
+    url: https://github.com/basicinventory-app/basicinventory/security/advisories/new
+    about: Privately, never in a public issue. See SECURITY.md.
+
+  - name: 🛟 Support, licensing and invoices
+    url: https://github.com/basicinventory-app/basicinventory/blob/main/SUPPORT.md
+    about: Channels, response times, and the private address for anything involving your business details.
+
+  - name: 📥 Downloads and release notes
+    url: https://github.com/basicinventory-app/basicinventory/releases/latest
+    about: Get the latest installer and read what changed before reporting.

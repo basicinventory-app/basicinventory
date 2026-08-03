@@ -1,0 +1,33 @@
+title: "[Show and tell]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show how you use BasicInventory: your warehouse layout, your naming scheme for locations, the routine that works for you.
+        Other users learn more from this than from any manual.
+
+        Blur or rename anything confidential before posting screenshots.
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: What you are running
+      description: Type of business, roughly how many items and locations, boxes or pallets mode.
+    validations:
+      required: true
+
+  - type: textarea
+    id: story
+    attributes:
+      label: How you use it
+      description: The workflow, what you changed to make it fit, what you would do differently starting again.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+    validations:
+      required: false

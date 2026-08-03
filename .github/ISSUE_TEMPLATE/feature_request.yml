@@ -1,0 +1,100 @@
+name: 💡 Feature request
+description: Suggest an improvement or a new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good requests describe **a problem in your work**, not only the button you imagine.
+        "At month end I retype every movement for my accountant" leads to a better answer than "add an export button".
+
+        Not sure yet? Float it in [Discussions → Ideas](https://github.com/basicinventory-app/basicinventory/discussions/categories/ideas) first.
+        Check the [planned issues](https://github.com/basicinventory-app/basicinventory/issues?q=is%3Aissue+is%3Aopen+label%3Aplanned) — it may already be on the way.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight
+      options:
+        - label: I searched the existing issues and this is not already requested or planned
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do today, and what makes it slow, error-prone or impossible?
+      placeholder: |
+        Every Monday I check which lots expire that week. Today I filter Stock by expiry,
+        write the results on paper and walk the aisles with it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like
+      description: Your idea of a solution, if you have one.
+      placeholder: A printable "expiring this week" list, grouped by aisle so the walk follows the layout.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you do instead today
+      description: Workarounds, other tools, spreadsheets — anything that partly solves it now.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How much would this change your day?
+      options:
+        - Blocking — I cannot use BasicInventory for part of my work without it
+        - Significant — I lose time every week
+        - Moderate — it would be a real improvement
+        - Nice to have
+    validations:
+      required: true
+
+  - type: input
+    id: frequency
+    attributes:
+      label: How often would you use it?
+      placeholder: "Several times a day · Weekly · At month end"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: business
+    attributes:
+      label: What kind of business is this for?
+      description: Context helps judge how widely useful the request is.
+      options:
+        - Retail shop
+        - Wholesale / distribution
+        - Food or beverage
+        - Manufacturing / workshop
+        - Pharmacy / healthcare
+        - Logistics operator
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Sketch or screenshot
+      description: A drawing on paper, a screenshot with arrows, or an example from another tool. Optional but very effective.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+    validations:
+      required: false

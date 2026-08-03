@@ -1,0 +1,48 @@
+# This repository holds documentation and release metadata only — no source
+# code, no build output, and never an installer committed to git (installers
+# belong to a Release, not to the repository history).
+
+# Binaries and archives
+*.exe
+*.msi
+*.dmg
+*.AppImage
+*.zip
+*.7z
+*.blockmap
+
+# Anything that could carry customer data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+diagnostics*.txt
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+
+# Scratch
+tmp/
+temp/
+draft-*.md

@@ -1,0 +1,44 @@
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas start here. Once an idea has support and a clear shape it becomes a
+        [feature request](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) and, if accepted, lands on the [planned issues](https://github.com/basicinventory-app/basicinventory/issues?q=is%3Aissue+is%3Aopen+label%3Aplanned).
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What is awkward, slow or impossible in your day today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: How you picture it working. Rough is fine.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: business
+    attributes:
+      label: What kind of business are you running?
+      options:
+        - Retail shop
+        - Wholesale / distribution
+        - Food or beverage
+        - Manufacturing / workshop
+        - Pharmacy / healthcare
+        - Logistics operator
+        - Other
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **If this matches something you need, give the post a 👍** — that is how priorities get set.

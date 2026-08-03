@@ -1,0 +1,28 @@
+# Labels live in .github/labels.yml and are applied from there, so the label set
+# is reviewable and reproducible instead of being clicked together in the UI.
+name: Sync labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/sync-labels.yml"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: micnncim/action-label-syncer@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          manifest: .github/labels.yml
+          # Removes labels that are no longer in the manifest. Turn off if you
+          # ever create labels by hand that must survive.
+          prune: true

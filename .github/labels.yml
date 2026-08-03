@@ -1,0 +1,116 @@
+# The label set for this repository. Edit here, not in the GitHub UI: the
+# sync-labels workflow applies this file and removes anything not listed.
+
+# --- What kind of thing is it? ------------------------------------------------
+- name: bug
+  color: d73a4a
+  description: Something is not working as documented
+
+- name: enhancement
+  color: 0d9488
+  description: A new capability or an improvement to an existing one
+
+- name: documentation
+  color: 0075ca
+  description: A gap or a mistake in the docs
+
+- name: question
+  color: d876e3
+  description: A question about how the product works
+
+- name: support
+  color: bfd4f2
+  description: Help using the product, not a defect
+
+- name: security
+  color: b60205
+  description: Security-relevant (public part of a coordinated disclosure)
+
+# --- Where is it in the pipeline? --------------------------------------------
+- name: needs triage
+  color: ededed
+  description: Not looked at yet
+
+- name: needs info
+  color: fbca04
+  description: Waiting on the reporter for details
+
+- name: confirmed
+  color: 5319e7
+  description: Reproduced by the maintainer
+
+- name: planned
+  color: 0e8a16
+  description: Accepted and coming
+
+- name: in progress
+  color: 1d76db
+  description: Being worked on right now
+
+- name: fixed
+  color: 0e8a16
+  description: Shipped — the issue says in which version
+
+# --- Why was it closed? -------------------------------------------------------
+- name: duplicate
+  color: cfd3d7
+  description: Already reported elsewhere
+
+- name: invalid
+  color: e4e669
+  description: Not a defect, or not reproducible as described
+
+- name: wontfix
+  color: ffffff
+  description: Declined on purpose — the reason is in the thread
+
+- name: stale
+  color: 795548
+  description: No activity; will close unless updated
+
+# --- Which part of the product? ----------------------------------------------
+- name: area/inventory
+  color: c2e0c6
+  description: Products, categories, locations, stock, movements
+
+- name: area/ai-assistant
+  color: c2e0c6
+  description: The AI assistant
+
+- name: area/backups
+  color: c2e0c6
+  description: Backup, restore and data safety
+
+- name: area/installer
+  color: c2e0c6
+  description: Installation, updates, packaging
+
+- name: area/ui
+  color: c2e0c6
+  description: Interface, layout, accessibility, translations
+
+- name: area/performance
+  color: c2e0c6
+  description: Speed and responsiveness with large data sets
+
+# --- How urgent? --------------------------------------------------------------
+- name: priority/critical
+  color: b60205
+  description: Data loss, or the application will not start
+
+- name: priority/high
+  color: d93f0b
+  description: Blocks normal work, no reasonable workaround
+
+- name: priority/low
+  color: fef2c0
+  description: Minor or cosmetic
+
+# --- Community ----------------------------------------------------------------
+- name: good first issue
+  color: 7057ff
+  description: A good entry point for documentation or testing help
+
+- name: help wanted
+  color: 008672
+  description: Community input or testing would move this forward
