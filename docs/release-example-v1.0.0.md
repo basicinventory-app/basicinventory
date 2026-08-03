@@ -1,19 +1,19 @@
-# Example: release notes for v1.0.0
+# Release notes: v1.0.0
 
-This is the text published as the GitHub Release for the first version. Kept in
-the repository as a worked example of the tone and structure expected from every
-release — see [`.github/RELEASE_NOTES_TEMPLATE.md`](../.github/RELEASE_NOTES_TEMPLATE.md)
-for the blank form.
+The text published as the GitHub Release for the first version, kept here as
+the worked example of the tone every release should have — see
+[`.github/RELEASE_NOTES_TEMPLATE.md`](../.github/RELEASE_NOTES_TEMPLATE.md) for
+the blank form.
 
 ---
 
-## BasicInventory v1.0.0 — first public release
+## BasicInventory Home v1.0.0 — first public release
 
 Know what you have, where it is, and what moved. BasicInventory is a Windows
 desktop application for small businesses that need real stock control without a
 warehouse-scale system and without a monthly bill.
 
-**Update:** first version — nothing to update from · **Backup recommended before updating:** not applicable
+**Update:** first version — nothing to update from · **Licence:** the download is free, a key is required to record changes
 
 ### ✨ What you get
 
@@ -37,9 +37,22 @@ warehouse-scale system and without a monthly bill.
   and that provider bills you directly. The assistant only reads; it cannot
   change your data, and it cannot reach your keys, backups or files.
 - **Backups without ceremony** — one click, plus an automatic copy every time you
-  close the application, with restore from the same screen.
+  close the application, with restore from the same screen. They live in your
+  Documents folder, so uninstalling never takes them with it.
 - **Export that opens in Excel** — every list, honouring the filters you applied.
+- **Updates you decide on** — when a new version exists you are told, with its
+  notes. Nothing downloads or installs until you say so, and you can skip a
+  version.
 - **Spanish and English**, light and dark, and a guided tour on first run.
+
+### 🔑 Activating
+
+The installer is free to download; the **licence key** is what you buy. It
+arrives with your purchase and starts with `BI1-`. Activation is checked on your
+own computer — offline, no account, nothing sent anywhere.
+
+Without a key the application still opens: you can read what is there, export it
+and take backups. Recording changes needs the key.
 
 ### 🔐 Privacy
 
@@ -61,12 +74,12 @@ encrypted with a machine-local key kept outside the database.
 | File | Purpose |
 | --- | --- |
 | `BasicInventory-Setup-1.0.0.exe` | Installer (Windows 10/11, 64-bit) |
-| `latest.yml` | Update metadata — used by the application, not for manual download |
+| `latest.yml`, `.blockmap` | Update metadata — used by the application, not for manual download |
 
 **SHA-256** of the installer:
 
 ```
-0000000000000000000000000000000000000000000000000000000000000000
+634b4b8a9d0d5bbdae277538634b8bb5fbc13bcd17db168a55e3793d153fdccd
 ```
 
 ```powershell
@@ -75,10 +88,12 @@ Get-FileHash .\BasicInventory-Setup-1.0.0.exe -Algorithm SHA256
 
 ### 🧾 First steps
 
-1. Run the installer — no administrator rights needed.
+1. Run the installer, accept the licence and choose where to install it. No
+   administrator rights needed.
 2. Pick your language, type your company name and choose boxes or pallets.
-3. Take the guided tour. It uses the real screens, so nothing is a mock-up.
-4. Set your backup folder in **Settings → Backups** before you load real data.
+3. Enter your licence key.
+4. Take the guided tour. It uses the real screens, so nothing is a mock-up.
+5. Set your backup folder in **Settings → Backups** before you load real data.
 
 Full documentation: [Getting started](getting-started.md).
 

@@ -17,7 +17,7 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
-## [1.0.0] — 2026-08-13
+## [1.0.0] — 2026-08-03
 
 First public release.
 
@@ -43,8 +43,19 @@ First public release.
   assistant is read-only, keeps a history of conversations you can revisit, and
   cannot reach configuration, keys, backups or files. Keys are stored encrypted
   (AES-256-GCM) with a machine-local key kept outside the database.
+- **Licence activation** — the download is free and the licence key is what you
+  buy. Activation happens on your computer, offline: no account, no
+  registration, nothing sent anywhere. Without a key you can still open the
+  application, read what is there, export it and take backups; you cannot record
+  changes. Settings shows which e-mail and order the copy is licensed to, and a
+  restored backup carries the licence with it.
 - **Backups** — one-click backup to a folder of your choice, an automatic backup
   when the application closes, retention pruning, and restore from the app.
+  Backups start out in `Documents\BasicInventory\Copias de seguridad`, outside
+  the installation, so uninstalling never takes them with it.
+- **Installer** — accepts the licence terms, lets you choose the folder, needs no
+  administrator rights, and creates desktop and Start menu shortcuts.
+  Uninstalling asks before deleting your data, with "keep" preselected.
 - **Excel-friendly export** — every list exports to CSV (semicolon separated,
   UTF-8 BOM) honouring the active filters.
 - **Guided onboarding** — first run asks for language, company name and
