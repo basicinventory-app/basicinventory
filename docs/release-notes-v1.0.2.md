@@ -12,6 +12,12 @@ One fix, and a good one if it ever bit you.
 
 ### Fixed
 
+- **Reporting a problem with the technical information attached now works.** It
+  used to end in a GitHub error page: the details travelled in the link, and one
+  error could carry a four-kilobyte dump that made it too long to accept. The
+  attachment is a short summary now, and the full log is one click away in
+  **Settings - Errors and diagnostics**. The dialog also tells you up front that
+  a GitHub account is needed.
 - **BasicInventory no longer fights over ports 3000 and 4000.** It used to serve
   itself on those two, which are the first ports any development tool grabs. If
   something else on your computer was already using one, the application simply

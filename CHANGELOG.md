@@ -21,6 +21,15 @@ Versions are dated `YYYY-MM-DD`.
 
 ### Fixed
 
+- **Reporting a problem with the technical information attached ended in a
+  GitHub error page.** The details travelled in the address bar and a single
+  error could carry a four-kilobyte dump, which made the link too long for
+  GitHub to accept — especially when it sends you through the sign-in page
+  first. The attachment is now a short summary, and the full log stays one
+  click away in Settings.
+- **The report dialog says up front that a GitHub account is needed**, instead
+  of letting you find out at the sign-in wall.
+
 - **The application no longer fights over ports 3000 and 4000.** It used to
   serve itself on those two, which are the first ports any development tool
   takes — if something else was using one, BasicInventory would not open at
