@@ -17,6 +17,18 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
+## [1.0.2] — 2026-08-03
+
+### Fixed
+
+- **The application no longer fights over ports 3000 and 4000.** It used to
+  serve itself on those two, which are the first ports any development tool
+  takes — if something else was using one, BasicInventory would not open at
+  all. It now uses a single, uncommon port chosen when it starts, and falls
+  back to another if that one is busy. Nothing to configure.
+
+---
+
 ## [1.0.1] — 2026-08-03
 
 A first round of fixes from using 1.0.0 in earnest.
@@ -108,6 +120,7 @@ First public release.
 - The installer is not yet code-signed, so Windows SmartScreen shows a warning.
 - Single machine, single user: no multi-user or cloud edition yet.
 
-[Unreleased]: https://github.com/basicinventory-app/basicinventory/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/basicinventory-app/basicinventory/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/basicinventory-app/basicinventory/releases/tag/v1.0.2
 [1.0.1]: https://github.com/basicinventory-app/basicinventory/releases/tag/v1.0.1
 [1.0.0]: https://github.com/basicinventory-app/basicinventory/releases/tag/v1.0.0
