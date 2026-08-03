@@ -17,6 +17,30 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
+## [1.0.1] — 2026-08-03
+
+A first round of fixes from using 1.0.0 in earnest.
+
+### Fixed
+
+- **Checking for updates no longer shows a raw "404".** When the updates
+  repository cannot be reached — no internet, a company firewall, a proxy with
+  its own certificate — the application now says so in your language and
+  suggests checking the connection, instead of printing an HTTP error that
+  means nothing. The technical detail still goes to the log.
+- **The technical information attached to a report stayed inside the dialog.**
+  A long stack trace or path used to push the dialog sideways instead of
+  wrapping. Same fix applied to the error details in Settings and to the crash
+  screen.
+
+### Added
+
+- **The assistant now says it can be wrong.** A permanent line under the message
+  box: AI can get things wrong, so check anything you are about to act on
+  against your data.
+
+---
+
 ## [1.0.0] — 2026-08-03
 
 First public release.
@@ -84,5 +108,6 @@ First public release.
 - The installer is not yet code-signed, so Windows SmartScreen shows a warning.
 - Single machine, single user: no multi-user or cloud edition yet.
 
-[Unreleased]: https://github.com/basicinventory-app/basicinventory/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/basicinventory-app/basicinventory/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/basicinventory-app/basicinventory/releases/tag/v1.0.1
 [1.0.0]: https://github.com/basicinventory-app/basicinventory/releases/tag/v1.0.0
