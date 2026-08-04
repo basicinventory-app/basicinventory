@@ -26,7 +26,7 @@ habit: this repository contains Markdown, YAML and images. Nothing else.
 | Discussions | **On** | Questions, ideas, announcements. |
 | Projects | **Off** | Milestones plus the `planned` label already say what is coming; a board would be a third place to keep in sync. Turn on only if you actually work a board daily. |
 | Wiki | **Off** | Documentation belongs in `docs/`, versioned with the repository and reviewable. |
-| Sponsorships | Off for now | `.github/FUNDING.yml` is commented out until the store URLs exist; a Sponsor button on a dead link is worse than none. |
+| Sponsorships | **On** | `.github/FUNDING.yml` points the button at the eBay and Gumroad listings — buying a licence is how this is funded, so the button is a buy button. |
 | Preserve this repository | On | Cheap insurance. |
 | Allow merge commits / squash / rebase | Irrelevant | There are no pull requests. |
 
@@ -181,8 +181,10 @@ Once or twice a week, not continuously:
 
 ## 10. Launch checklist
 
-- [ ] Fill the store URLs: the purchase table in `README.md` and the commented
-      block in `.github/FUNDING.yml`.
+- [x] Store URLs in `README.md`, `SUPPORT.md` and `.github/FUNDING.yml`
+      (eBay ES/EN + Gumroad). The application links to the eBay listing that
+      matches its interface language — keep `apps/web/src/lib/store.ts` in the
+      private repository in step with these.
 - [ ] Confirm the licence text fits how you actually sell (jurisdiction,
       one-device wording) in `LICENSE.md`, and that it matches the copies the
       installer shows (`assets/license_es.txt`, `license_en.txt` in the private

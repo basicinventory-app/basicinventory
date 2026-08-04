@@ -1,7 +1,5 @@
 # BasicInventory is commercial software: buying a licence is how it is funded,
-# so there is no donation platform here. Uncomment the store URLs once they are
-# live — a "Sponsor" button pointing at a dead link is worse than no button.
-
-# custom:
-#   - "https://www.ebay.es/usr/<your-shop>"
-#   - "https://<your-account>.gumroad.com/l/basicinventory"
+# so the button points at the store rather than at a donation platform.
+custom:
+  - "https://www.ebay.es/itm/318673321758"
+  - "https://xabier6.gumroad.com/l/basicinventory"

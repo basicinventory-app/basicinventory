@@ -23,9 +23,10 @@ to be a bug.
 
 ### Purchases and licensing
 
-BasicInventory is sold through eBay and Gumroad. Use the message system of the
-platform you bought from — that reaches the author with your order attached, and
-it is also the channel that platform's buyer protection recognises.
+BasicInventory is sold on eBay ([Spanish](https://www.ebay.es/itm/318673321758) · [English](https://www.ebay.es/itm/318673323733)) and on
+[Gumroad](https://xabier6.gumroad.com/l/basicinventory). Use the message system of the platform you bought from — that
+reaches the author with your order attached, and it is also the channel that
+platform's buyer protection recognises.
 
 Nothing about a purchase belongs in a public issue: order numbers, invoices,
 addresses and licence keys stay off this repository.

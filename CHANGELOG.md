@@ -19,6 +19,12 @@ Versions are dated `YYYY-MM-DD`.
 
 ## [1.0.2] — 2026-08-03
 
+### Added
+
+- **A "Buy a licence" button on the activation screen.** If you downloaded the
+  installer before buying, the screen asking for your key now takes you to the
+  listing — in the language the application is running in.
+
 ### Fixed
 
 - **Reporting a problem with the technical information attached ended in a

@@ -6,9 +6,16 @@ Paste into the GitHub release, with the SHA-256 `pnpm release` prints.
 
 ## BasicInventory Home v1.0.2
 
-One fix, and a good one if it ever bit you.
+Two fixes worth having, and a shortcut for anyone still without a licence.
 
 **Update:** offered in the application - **Backup recommended before updating:** no
+
+### Added
+
+- **A "Buy a licence" button on the activation screen.** If you downloaded the
+  installer before buying, the screen that asks for your key now has somewhere
+  to go: it opens the listing that matches the language the application is
+  running in.
 
 ### Fixed
 

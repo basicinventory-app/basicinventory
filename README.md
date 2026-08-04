@@ -13,7 +13,7 @@ Fast, offline-first, no subscription required.
 [![Issues](https://img.shields.io/github/issues/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/issues)
 [![Discussions](https://img.shields.io/github/discussions/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/discussions)
 
-[Download](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
+[Buy](https://www.ebay.es/itm/318673321758) · [Download](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
 
 </div>
 
@@ -241,12 +241,14 @@ the version line you bought — no subscription.
 look around; recording stock needs a licence. See
 [Activating your licence](#activating-your-licence).
 
-<!-- TODO: replace the two links below with your live store URLs before launch. -->
-
 | Where | Link |
 | --- | --- |
-| eBay | *coming soon* |
-| Gumroad | *coming soon* |
+| eBay (Spanish listing) | **[Buy on eBay](https://www.ebay.es/itm/318673321758)** |
+| eBay (English listing) | **[Buy on eBay](https://www.ebay.es/itm/318673323733)** |
+| Gumroad | **[Buy on Gumroad](https://xabier6.gumroad.com/l/basicinventory)** |
+
+The two eBay listings are the same product; they differ only in the language of
+the description. Pick whichever you read more comfortably.
 
 Anything about a purchase — invoices, refunds, volume or reseller enquiries —
 goes through the store you bought from, using its message system: your order
