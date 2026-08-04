@@ -17,13 +17,17 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
-## [1.0.2] — 2026-08-03
+## [1.0.3] — 2026-08-04
 
 ### Added
 
 - **A "Buy a licence" button on the activation screen.** If you downloaded the
-  installer before buying, the screen asking for your key now takes you to the
-  listing — in the language the application is running in.
+  installer before buying, the screen asking for your key now has somewhere to
+  go: it opens the listing in the language the application is running in.
+
+---
+
+## [1.0.2] — 2026-08-03
 
 ### Fixed
 
