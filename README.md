@@ -73,7 +73,7 @@ page.
 Verify what you downloaded: each release lists the SHA-256 of the installer.
 
 ```powershell
-Get-FileHash .\BasicInventory-Setup-1.0.0.exe -Algorithm SHA256
+Get-FileHash .\BasicInventory-Setup-1.0.4.exe -Algorithm SHA256
 ```
 
 ## System requirements

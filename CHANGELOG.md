@@ -17,6 +17,23 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
+## [1.0.4] — 2026-08-06
+
+### Fixed
+
+- **The English interface no longer shows movement types in Spanish.** Entries,
+  exits, adjustments and moves are stored in a table that is written in one
+  language, and the application was showing that stored name — so an English
+  copy read "Salida" and "Ajuste" in the movements list, on the dashboard and in
+  the exported file. The interface now translates them itself. Your own data —
+  product names, reasons, lots — is untouched: it is yours, in whatever language
+  you typed it.
+- **Exported files are named in your language.** An English copy was
+  downloading `movimientos.csv` and `productos.csv`; now it gets `movements.csv`
+  and `products.csv`.
+
+---
+
 ## [1.0.3] — 2026-08-04
 
 ### Added
