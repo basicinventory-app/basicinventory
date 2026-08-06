@@ -37,7 +37,8 @@ Close and reopen. If it persists, the log folder holds the reason:
 ## Data
 
 **My stock is wrong after an exit.**
-Exits consume the earliest expiry first (FEFO), then the oldest entry. Check
+An exit with no location given takes the earliest expiry first (FEFO), then the
+oldest goods — which is not always the row you had in mind. Check
 **Movements** for the item: every change is recorded there, with quantity and
 location. If the movements do not add up to what stock shows, that is a bug worth
 reporting with the item and the dates.

@@ -86,8 +86,9 @@ First public release.
   The choice is made during first-run setup and can be changed at any time from
   Settings; it changes only how stock is presented, never the data.
 - **Movements** — entries, exits, adjustments and transfers, recorded as an
-  immutable audit trail. Exits consume the earliest expiry first (FEFO, then
-  FIFO) and never take stock below zero.
+  immutable audit trail. An exit registered without a location takes the earliest
+  expiry first (FEFO, then the oldest goods); one with a location, lot or pallet
+  takes what you named. Stock never goes below zero.
 - **Lots and expiry dates** — enabled per product, with an expiry horizon and a
   dashboard warning for goods expiring within 30 days.
 - **Dashboard** — item count, total stock, items below their reorder level,

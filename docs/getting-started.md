@@ -106,7 +106,7 @@ yours in [Discussions](https://github.com/basicinventory-app/basicinventory/disc
 | You did this | Do this in BasicInventory |
 | --- | --- |
 | Goods arrived | **Entry** — item, location, quantity, lot/expiry |
-| Goods went out | **Exit** — item and quantity. The earliest expiry is consumed first (FEFO), then the oldest entry |
+| Goods went out | **Exit** — item and quantity. Leave the location blank and the earliest expiry is taken first (FEFO, then the oldest goods); fill it in and it comes out of there |
 | You counted and reality differs | **Adjustment** — enter the real count; the difference is recorded |
 | You moved goods to another location | **Transfer** — origin, destination, quantity |
 | You need the list for someone else | **Export** from the pagination bar; opens in Excel |

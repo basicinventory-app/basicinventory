@@ -31,8 +31,10 @@ and without a monthly bill.
   pallets** (full SSCC detail). One data model, two presentations; switch at any
   time from Settings, with no migration and no data loss.
 - **Movements with an audit trail** — entries, exits, adjustments and transfers.
-  Exits consume the earliest expiry first (FEFO, then FIFO). Nothing is edited
-  silently: every change leaves a movement.
+  An exit registered without naming a location takes the earliest expiry first
+  (FEFO, then the oldest goods); name the location, the lot or the pallet and
+  what leaves is what you picked. Nothing is edited silently: every change leaves
+  a movement.
 - **Lots and expiry dates** — per product, only where you need them, with an
   expiry horizon on the dashboard.
 - **Dashboard** — item count, total stock, items below their reorder level, goods
