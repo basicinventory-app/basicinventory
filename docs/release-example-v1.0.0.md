@@ -51,8 +51,8 @@ The installer is free to download; the **licence key** is what you buy. It
 arrives with your purchase and starts with `BI1-`. Activation is checked on your
 own computer — offline, no account, nothing sent anywhere.
 
-Without a key the application still opens: you can read what is there, export it
-and take backups. Recording changes needs the key.
+Without a key the application shows the activation screen and waits: there is no
+trial mode. Nothing is lost by waiting — activate whenever the key arrives.
 
 ### 🔐 Privacy
 

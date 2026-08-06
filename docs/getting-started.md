@@ -32,9 +32,9 @@ Then BasicInventory asks for your **licence key** — the one that came with you
 purchase, starting with `BI1-`. It is checked on your computer, offline: nothing
 is sent anywhere and there is no account to create.
 
-Without a key the application still opens: you can read, export and back up, but
-not record changes. Settings later shows which e-mail and order the copy is
-licensed to.
+Without a key the application stops here: the activation screen stays until a
+valid key is entered, so there is nothing to explore first. Settings later shows
+which e-mail and order the copy is licensed to.
 
 Then take the guided tour. It walks the real screens with sample data and can be
 replayed from the **?** button in the top bar.

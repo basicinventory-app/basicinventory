@@ -112,9 +112,10 @@ setup, BasicInventory asks for it.
   with `BI1-`.
 - Activation happens **on your computer, offline**: nothing is sent anywhere, and
   no account or registration is involved.
-- Without a key you can still open the application, read what is already there,
-  export it and take backups — you simply cannot record changes. A licence
-  problem will never leave your inventory unreachable.
+- **Without a key the application cannot be used.** After the first-run setup it
+  shows the activation screen and waits for the key; there is no trial mode and
+  no read-only mode. Your data is never destroyed by this — activate later and
+  everything is where you left it — but the interface stays behind that screen.
 - The key stays with your data: restoring a backup on another computer carries
   the licence with it.
 - Settings shows which e-mail and order the copy is licensed to.
