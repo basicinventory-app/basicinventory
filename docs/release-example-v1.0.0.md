@@ -25,8 +25,7 @@ warehouse-scale system and without a monthly bill.
   code). Choose during setup, change whenever you like: it changes what you see,
   never your data.
 - **Movements you can trust** — entries, exits, adjustments and transfers, each
-  one recorded permanently. An exit with no location given takes the earliest
-  expiry first, and stock can
+  one recorded permanently. Stock can
   never go below zero by accident.
 - **Lots and expiry dates** — switched on per product, with the goods expiring in
   the next 30 days on the dashboard.
