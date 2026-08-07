@@ -13,7 +13,7 @@ Fast, offline-first, no subscription required.
 [![Issues](https://img.shields.io/github/issues/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/issues)
 [![Discussions](https://img.shields.io/github/discussions/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/discussions)
 
-[Buy](https://www.ebay.es/itm/318673321758) · [Download](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
+[Try the demo](https://demo.basicinventory.app) · [Buy](https://www.ebay.es/itm/318673321758) · [Download](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
 
 </div>
 
@@ -46,6 +46,18 @@ and without a monthly bill.
 
 > Not a point of sale, not accounting software: BasicInventory holds no prices,
 > no invoices and no customer records.
+
+## Try it first
+
+[**demo.basicinventory.app**](https://demo.basicinventory.app) is the whole
+application running in your browser, on a sample warehouse. Register entries and
+exits, move stock, filter, export, switch between boxes and pallets, ask the
+assistant with your own API key. Nothing to install, no account, and nothing you
+type leaves your tab — the demo runs entirely in the browser and its data
+disappears when you close it.
+
+What the demo cannot show, because a browser tab is not a PC: backups, settings,
+updates and keeping your data. Those are the application.
 
 ## Screenshots
 
@@ -116,6 +128,8 @@ setup, BasicInventory asks for it.
   shows the activation screen and waits for the key; there is no trial mode and
   no read-only mode. Your data is never destroyed by this — activate later and
   everything is where you left it — but the interface stays behind that screen.
+  To see everything working before you buy, use the browser demo:
+  [demo.basicinventory.app](https://demo.basicinventory.app).
 - The key stays with your data: restoring a backup on another computer carries
   the licence with it.
 - Settings shows which e-mail and order the copy is licensed to.

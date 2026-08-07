@@ -13,7 +13,16 @@ Versions are dated `YYYY-MM-DD`.
 
 ### Added
 
-- Nothing yet.
+- **A demo you can use in your browser**, at
+  [demo.basicinventory.app](https://demo.basicinventory.app). It is the whole
+  application — the same screens and the same rules — running in a tab on a
+  sample warehouse: register entries and exits, move stock, filter, export,
+  switch between boxes and pallets, and ask the assistant with your own API key.
+  Nothing is installed, no account is needed, and nothing you type leaves your
+  browser: the demo has no server behind it and its data disappears when you
+  close the tab. Backups, settings, updates and keeping your data are the parts
+  a browser cannot do — those are what the application is for. This changes
+  nothing in the installed application.
 
 ---
 
