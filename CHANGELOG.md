@@ -26,6 +26,18 @@ Versions are dated `YYYY-MM-DD`.
 
 ---
 
+## [1.0.5] — 2026-08-10
+
+### Fixed
+
+- **The provider description on the AI settings screen now follows your
+  language.** When choosing an AI provider (OpenAI, Anthropic, Gemini,
+  OpenRouter), the short line under each name was always shown in Spanish, even
+  with the interface in English. It now matches the interface language. Nothing
+  else changes: you still bring your own provider and key.
+
+---
+
 ## [1.0.4] — 2026-08-06
 
 ### Fixed
