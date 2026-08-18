@@ -18,6 +18,6 @@ contact_links:
     url: https://github.com/basicinventory-app/basicinventory/blob/main/SUPPORT.md
     about: Channels, response times, and the private address for anything involving your business details.
 
-  - name: 📥 Downloads and release notes
-    url: https://github.com/basicinventory-app/basicinventory/releases/latest
-    about: Get the latest installer and read what changed before reporting.
+  - name: 🛒 Get BasicInventory (Microsoft Store)
+    url: https://apps.microsoft.com/detail/9N8GQS365ZLM
+    about: Buy, install and update through the Microsoft Store. See the CHANGELOG for what changed.

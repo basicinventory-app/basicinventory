@@ -5,24 +5,29 @@ All notable changes to BasicInventory are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Each released version has an installer on the
-[Releases](https://github.com/basicinventory-app/basicinventory/releases) page.
-Versions are dated `YYYY-MM-DD`.
+BasicInventory is distributed through the
+[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM), which keeps it
+updated automatically. Versions are dated `YYYY-MM-DD`.
 
 ## [Unreleased]
 
 ### Added
 
-- **BasicInventory is on the Microsoft Store**, now the main way to get it:
+- **BasicInventory is on the Microsoft Store**, now the only way to get it:
   [apps.microsoft.com](https://apps.microsoft.com/detail/9N8GQS365ZLM). Buying and
-  installing are one step; Microsoft signs the package, so there is no SmartScreen
-  warning; Windows keeps it updated; and the copy is sold already licensed, tied
-  to your Microsoft account, with no key to paste. It is the same application as
-  the direct download — same screens, same rules, same local data — differing only
-  in how it is bought, installed, updated and licensed. The direct download
-  (eBay/Gumroad + the installer here, activated with a `BI1-` key) stays available
-  as an alternative. See
-  [Two ways to get it](https://github.com/basicinventory-app/basicinventory/blob/main/docs/microsoft-store.md).
+  installing are one step; it installs with no security warning; Windows keeps it
+  updated; and the copy is sold already licensed, tied to your Microsoft account,
+  with no key to paste and nothing to activate. See
+  [How to get BasicInventory](https://github.com/basicinventory-app/basicinventory/blob/main/docs/microsoft-store.md).
+
+### Changed
+
+- **The direct download has been retired.** The eBay and Gumroad listings and the
+  unsigned installer distributed here (activated with a `BI1-` licence key) are no
+  longer offered, and the GitHub Releases feed the direct build updated from is
+  gone. The Microsoft Store is now the single channel: it is the same application,
+  bought, installed, updated and licensed through the Store. Copies already
+  installed from the direct download keep working with their existing key.
 - **A demo you can use in your browser**, at
   [demo.basicinventory.app](https://demo.basicinventory.app). It is the whole
   application — the same screens and the same rules — running in a tab on a

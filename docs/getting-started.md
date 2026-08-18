@@ -1,27 +1,15 @@
 # Getting started
 
-From installer to a warehouse you can actually use, in about twenty minutes.
+From the Store to a warehouse you can actually use, in about twenty minutes.
 
 ## 1. Install
 
-There are [two ways to get it](microsoft-store.md). Pick one.
-
-**From the Microsoft Store (recommended).** Open the
-[Store listing](https://apps.microsoft.com/detail/9N8GQS365ZLM) and select
-**Get**. Windows installs and pins it — signed, no SmartScreen warning, no
-administrator rights — and the copy is **already licensed**, so first run goes
-straight to setup below with no key to enter.
-
-**From the direct download.**
-
-1. Download `BasicInventory-Setup-x.y.z.exe` from the
-   [latest release](https://github.com/basicinventory-app/basicinventory/releases/latest).
-2. Check the SHA-256 published with the release:
-   `Get-FileHash .\BasicInventory-Setup-x.y.z.exe -Algorithm SHA256`.
-3. Run it. No administrator rights are needed; it installs for your user only.
-4. Windows SmartScreen may warn about an unknown publisher while this build is
-   not code-signed — **More info → Run anyway** once the hash matches. (The Store
-   build is signed and skips this.)
+BasicInventory installs from the
+**[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM)**. Open the
+listing and select **Get**. Windows installs and pins it — no security warning,
+no administrator rights — and the copy is **already licensed**, so first
+run goes straight to setup below with no key to enter. See
+[how to get it](microsoft-store.md).
 
 ## 2. First run
 
@@ -39,13 +27,9 @@ The setup asks three things:
    screens show; both modes store the same thing, and you can switch at any time
    in **Settings → Management mode** without migrating anything.
 
-**On the direct download**, BasicInventory then asks for your **licence key** —
-the one that came with your eBay or Gumroad purchase, starting with `BI1-`. It is
-checked on your computer, offline: nothing is sent anywhere and there is no
-account to create. Without a key this build stops here — the activation screen
-stays until a valid key is entered — and Settings later shows which e-mail and
-order the copy is licensed to. **On the Microsoft Store build there is no key**:
-it is licensed by your purchase and goes straight on.
+There is **no licence key to enter**: the Store copy is licensed by your
+purchase, tied to your Microsoft account, so setup goes straight on with nothing
+to activate.
 
 Then take the guided tour. It walks the real screens with sample data and can be
 replayed from the **?** button in the top bar.
@@ -137,15 +121,14 @@ BasicInventory. See [AI assistant](ai-assistant.md).
 
 ## Where your data lives
 
-`%APPDATA%\BasicInventory` — paste that into the Explorer address bar.
+Your inventory, the error log and the local encryption key sit in a per-user
+application folder that Windows manages for Store apps. You rarely need the raw
+path — the in-app backup is the supported way to reach your data — but
+**Settings → Errors and diagnostics** always shows the exact folder in use.
 
-| File | What it is |
-| --- | --- |
-| `basicinventory.db` | Your inventory |
-| `logs\basicinventory.log` | Errors, used by Settings → Errors and diagnostics |
-| `.secret.key` | Local key that encrypts your AI provider key |
-
-Moving to another computer: back up, copy the `.db`, restore it there.
+Moving to another computer: use **Settings → Backups → Create backup now**, copy
+the backup file across, and restore it from **Settings → Backups** on the new
+machine.
 
 ## Next
 

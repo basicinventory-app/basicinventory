@@ -10,7 +10,7 @@ body:
 
         **Before you continue**
         - Search [existing issues](https://github.com/basicinventory-app/basicinventory/issues?q=is%3Aissue) — adding your details to an open one helps more than a duplicate.
-        - Update to the [latest release](https://github.com/basicinventory-app/basicinventory/releases/latest) if you can; the problem may already be fixed.
+        - Make sure you are on the current version — Windows keeps the Store copy updated (**Microsoft Store → Library → Get updates**); the problem may already be fixed.
         - **Never post licence keys, invoices, personal data or a database backup here.** This issue is public.
         - Found a **security** problem? Stop and follow [SECURITY.md](https://github.com/basicinventory-app/basicinventory/blob/main/SECURITY.md) instead.
 
@@ -118,7 +118,7 @@ body:
       placeholder: |
         BasicInventory 1.0.0 (production)
         System: win32 x64 · Node 24.15.0
-        Log: C:\Users\<user>\AppData\Roaming\BasicInventory\logs\basicinventory.log
+        Log: <the folder shown in Settings → Errors and diagnostics>\logs\basicinventory.log
         ...
     validations:
       required: true

@@ -1,5 +1,4 @@
 # BasicInventory is commercial software: buying a licence is how it is funded,
-# so the button points at the store rather than at a donation platform.
+# so the button points at the Microsoft Store rather than at a donation platform.
 custom:
-  - "https://www.ebay.es/itm/318673321758"
-  - "https://xabier6.gumroad.com/l/basicinventory"
+  - "https://apps.microsoft.com/detail/9N8GQS365ZLM"

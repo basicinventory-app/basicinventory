@@ -3,7 +3,7 @@
 BasicInventory is offline-first. Your inventory is stored **on your computer**,
 in a local database, and is not sent anywhere.
 
-Last updated: 2026-07-29.
+Last updated: 2026-08-18.
 
 ## What is collected
 
@@ -15,21 +15,12 @@ application, or whether you use it at all.
 
 ## What leaves your computer, and when
 
-Exactly two things, both visible and both avoidable:
+Exactly one thing, visible and avoidable: a question you send to the AI
+assistant, and only if you enable it. The application makes **no update check of
+its own** — Windows updates it through the Microsoft Store — so nothing leaves
+your machine on startup or in the background.
 
-### 1. The update check — direct download only
-
-On the **direct download**, the application asks GitHub on startup whether a newer
-release exists. It is an anonymous, read-only request to a public API. GitHub,
-like any web server, sees the request and your IP address; BasicInventory sends
-nothing about you or your data.
-
-The **Microsoft Store** build makes no such check: Windows updates it the way it
-updates every Store app, so this request does not happen at all. On a Store
-install the only thing that ever leaves your machine is an AI question you choose
-to ask, below.
-
-### 2. Your questions to the AI assistant — only if you enable it
+### Your questions to the AI assistant — only if you enable it
 
 The assistant is off until you configure a provider. Once you do, asking a
 question sends to **the provider you chose, with your own credentials**:
@@ -44,7 +35,9 @@ Do not want that? Do not configure the assistant. Everything else works.
 
 ## Where your data is stored
 
-`%APPDATA%\BasicInventory`:
+Your inventory, the error log and the local encryption key sit in a per-user
+application folder that Windows manages for Store apps. **Settings → Errors and
+diagnostics** shows the exact folder in use.
 
 | File | Contents |
 | --- | --- |
@@ -89,11 +82,10 @@ assistant and ask a question that includes it.
 
 ## Purchases
 
-Buying a licence happens on the store platform — the Microsoft Store, eBay or
-Gumroad — which handles your payment details under its own privacy policy. Those
-details never reach the application. A Microsoft Store purchase is tied to your
-Microsoft account by Microsoft, not by BasicInventory; the application receives
-no account information.
+Buying a licence happens on the **Microsoft Store**, which handles your payment
+details under its own privacy policy. Those details never reach the application.
+The purchase is tied to your Microsoft account by Microsoft, not by
+BasicInventory; the application receives no account information.
 
 ## Children
 

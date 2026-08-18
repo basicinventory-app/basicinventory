@@ -16,7 +16,7 @@ keeps it attached to your order.
 | Ask how to do something | [Discussions → Q&A](https://github.com/basicinventory-app/basicinventory/discussions/categories/q-a) | Conversations, not tickets — and answers stay searchable. |
 | Share an idea before formalising it | [Discussions → Ideas](https://github.com/basicinventory-app/basicinventory/discussions/categories/ideas) | Other users can weigh in first. |
 | Report a security vulnerability | [Private report](https://github.com/basicinventory-app/basicinventory/security/advisories/new) | Private between you and the maintainer. **Never a public issue** — see [SECURITY.md](SECURITY.md). |
-| Ask about a purchase, an invoice, a refund or a licence | The store where you bought it | Your order details are there, and so is the message thread. |
+| Ask about a purchase, an invoice, a refund or a licence | The [Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) | Your order details are there, and Microsoft handles purchases and refunds under its own policy. |
 
 Not sure? Open a Q&A discussion. It gets converted to an issue if it turns out
 to be a bug.
@@ -24,25 +24,23 @@ to be a bug.
 ### Purchases and licensing
 
 BasicInventory is sold on the
-[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) (the main
-channel), on eBay ([Spanish](https://www.ebay.es/itm/318673321758) · [English](https://www.ebay.es/itm/318673323733)) and on
-[Gumroad](https://xabier6.gumroad.com/l/basicinventory). Anything about a
-purchase, refund or invoice goes through the platform you bought from — for the
-Store, that is Microsoft's own purchase and refund support; for eBay or Gumroad,
-their message systems, which reach the author with your order attached and are
-the channel each platform's buyer protection recognises. See
-[Two ways to get it](docs/microsoft-store.md) for how the two differ.
+[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM), which is the
+only place to buy and install it. Anything about a purchase, refund or invoice
+goes through Microsoft's own purchase and refund support, which keeps it attached
+to your order. See [How to get BasicInventory](docs/microsoft-store.md).
 
-Nothing about a purchase belongs in a public issue: order numbers, invoices,
-addresses and licence keys stay off this repository.
+The licence is your Store purchase, tied to your Microsoft account — there is no
+key to activate. Nothing about a purchase belongs in a public issue: order
+numbers, invoices and addresses stay off this repository.
 
 ## Before you write
 
 Nine out of ten reports are answered faster when they arrive complete:
 
-1. **Check your version.** Settings → Errors and diagnostics shows it. Then look
-   at the [latest release](https://github.com/basicinventory-app/basicinventory/releases/latest)
-   — the problem may already be fixed.
+1. **Check your version.** Settings → Errors and diagnostics shows it. Windows
+   keeps the Store copy up to date, so make sure you are on the current version
+   (**Microsoft Store → Library → Get updates**) — the problem may already be
+   fixed. See the [changelog](CHANGELOG.md).
 2. **Search** [existing issues](https://github.com/basicinventory-app/basicinventory/issues?q=is%3Aissue)
    and [discussions](https://github.com/basicinventory-app/basicinventory/discussions).
    Adding "same here" plus your details to an open issue is more useful than a

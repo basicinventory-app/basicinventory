@@ -51,23 +51,21 @@ Target fix windows, from confirmation: **critical** 14 days, **high** 30 days,
 
 ## Scope
 
-**In scope** — the BasicInventory desktop application distributed from this
-repository's Releases:
+**In scope** — the BasicInventory desktop application distributed through the
+[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM):
 
 - Remote or local code execution, privilege escalation.
 - Extraction of the encrypted AI provider key, or of inventory data, by another
   user or process on the same machine.
-- Tampering with the update mechanism (serving a forged update).
 - Injection into the AI assistant's read-only data layer that reaches tables or
   files it must not reach.
-- Anything that sends user data off the machine other than the two documented
-  cases (update check, and the AI provider *you* configured).
+- Anything that sends user data off the machine other than the one documented
+  case (the AI provider *you* configured).
 
 **Out of scope**:
 
 - Vulnerabilities that require an attacker to already be an administrator on the
   machine, or physical access to an unlocked session.
-- The unsigned installer triggering a SmartScreen warning — known and planned.
 - The AI provider's own service, its models or its billing.
 - Reports produced only by an automated scanner, with no demonstrated impact.
 - Denial of service against your own local installation.

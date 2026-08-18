@@ -14,28 +14,15 @@ saves a full round of questions.
 
 ## Installation and startup
 
-**Windows SmartScreen blocks the installer.**
-This is the **direct download** only: that installer is not code-signed yet, so
-Windows does not recognise the publisher. Verify the SHA-256 published with the
-release, then **More info → Run anyway**. Code signing is planned. To avoid it
-entirely, install the signed build from the
-[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) —
-see [Two ways to get it](microsoft-store.md).
-
-**Your antivirus quarantines the installer or the application.**
-A false positive on unsigned Electron applications. Verify the hash, then add an
-exclusion for `%LOCALAPPDATA%\Programs\BasicInventory`. If the hash does not
-match what the release page says, do not run it and report it as a security
-issue.
-
 **The application will not start, or shows "ports 3000/4000 are busy".**
 Another copy is already running — check the system tray and Task Manager for
 `BasicInventory.exe`, or an old process left over from a crash. End it and start
 again.
 
 **The window opens but stays empty.**
-Close and reopen. If it persists, the log folder holds the reason:
-`%APPDATA%\BasicInventory\logs`. Attach `basicinventory.log` to a report.
+Close and reopen. If it persists, the log holds the reason:
+**Settings → Errors and diagnostics** shows the log folder and copies the recent
+errors. Attach that to a report.
 
 ## Data
 
@@ -55,23 +42,21 @@ Restore the most recent backup (**Settings → Backups**), accepting that work d
 after that copy is lost. This is what the automatic backup on close is for.
 
 **I want to start over with an empty database.**
-Close the application, rename `%APPDATA%\BasicInventory\basicinventory.db` (keep
-it — do not delete), and start again: a fresh database is created. Restore the
-renamed file if you change your mind.
+Take a backup first (**Settings → Backups → Create backup now**) so you can
+return to your current data. The live database sits in the app folder shown in
+**Settings → Errors and diagnostics**; close the application, rename
+`basicinventory.db` there (keep it — do not delete), and start again: a fresh
+database is created. Restore the backup, or the renamed file, if you change your
+mind.
 
 ## Updates
 
-**The application never offers an update.**
-If you installed from the **Microsoft Store**, that is expected: Windows updates
-it in the background and the app never offers updates itself. On the **direct
-download**, check
-[Releases](https://github.com/basicinventory-app/basicinventory/releases)
-manually — a corporate proxy or firewall blocking `api.github.com` prevents the
-check; installing over the existing version keeps your data.
-
-**The update downloaded but did not install.**
-Restart the application. If it still does not apply, install the release manually
-— it is the same file.
+**An update has not arrived.**
+Windows and the Microsoft Store manage updates in the background — the
+application never offers updates itself, so there is nothing to do from inside
+it. To check or trigger it, open the **Microsoft Store → Library → Get updates**,
+or check for Windows updates. A firewall or proxy that blocks the Microsoft Store
+can hold updates back.
 
 ## Backups
 

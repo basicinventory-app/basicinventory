@@ -26,7 +26,7 @@ habit: this repository contains Markdown, YAML and images. Nothing else.
 | Discussions | **On** | Questions, ideas, announcements. |
 | Projects | **Off** | Milestones plus the `planned` label already say what is coming; a board would be a third place to keep in sync. Turn on only if you actually work a board daily. |
 | Wiki | **Off** | Documentation belongs in `docs/`, versioned with the repository and reviewable. |
-| Sponsorships | **On** | `.github/FUNDING.yml` points the button at the eBay and Gumroad listings — buying a licence is how this is funded, so the button is a buy button. |
+| Sponsorships | **On** | `.github/FUNDING.yml` points the button at the Microsoft Store listing — buying a licence is how this is funded, so the button is a buy button. |
 | Preserve this repository | On | Cheap insurance. |
 | Allow merge commits / squash / rebase | Irrelevant | There are no pull requests. |
 
@@ -122,17 +122,21 @@ watch discussions more reliably than they watch releases.
 
 ## 7. Release process
 
-1. Cut the release from the **private** source repository (`pnpm release`,
-   electron-builder publishes the installer and `latest.yml` here).
-2. Rewrite the generated notes using
-   [`RELEASE_NOTES_TEMPLATE.md`](RELEASE_NOTES_TEMPLATE.md) — the generated ones
-   read like commit logs, which is not what a user needs.
-3. Publish the SHA-256 of the installer in the notes.
-4. Mirror the same content into [`CHANGELOG.md`](../CHANGELOG.md).
-5. Close the milestone; comment on every issue in it saying which version fixed
+BasicInventory ships **only through the Microsoft Store**; this repository holds
+no installer, no `latest.yml` and no GitHub Releases.
+
+1. Build the MSIX package from the **private** source repository
+   (`pnpm package:store`) and submit it to the Microsoft Store through Partner
+   Center. The Store signs, distributes and updates it — there is nothing to
+   upload here.
+2. Write the user-facing notes with
+   [`RELEASE_NOTES_TEMPLATE.md`](RELEASE_NOTES_TEMPLATE.md) for the CHANGELOG and
+   the announcement (Partner Center also shows its own per-version notes).
+3. Mirror the same content into [`CHANGELOG.md`](../CHANGELOG.md).
+4. Close the milestone; comment on every issue in it saying which version fixed
    it, and label them `fixed`. Closing them is what removes them from the
    public "what's next" list — there is no roadmap file to edit, on purpose.
-6. Post the announcement discussion.
+5. Post the announcement discussion.
 
 Never delete or re-tag a published release: installed applications resolve
 updates against those tags. Publish a patch instead.
@@ -160,9 +164,10 @@ Once or twice a week, not continuously:
 - **Never leak the source by accident.** No stack traces with file paths from the
   private repository, no internal architecture documents, no screenshots of the
   editor.
-- **Keep releases immutable and verifiable.** Publish hashes; sign the installer
-  as soon as you can. This is the single biggest trust signal for a downloadable
-  `.exe` from an unknown vendor.
+- **Let the Store carry the trust.** Shipping only through the Microsoft Store
+  means Windows signs and delivers every copy — the single biggest trust signal
+  for an app from an unknown vendor, with no unsigned `.exe` for anyone to
+  second-guess.
 - **Answer, even when the answer is no.** A tracker where every issue gets a
   human reply within a week reads as a maintained product regardless of its size.
 - **Write the changelog for users.** "Fixed a race condition in the stock
@@ -181,22 +186,18 @@ Once or twice a week, not continuously:
 
 ## 10. Launch checklist
 
-- [x] Store URLs in `README.md`, `SUPPORT.md` and `.github/FUNDING.yml`
-      (eBay ES/EN + Gumroad). The application links to the eBay listing that
-      matches its interface language — keep `apps/web/src/lib/store.ts` in the
-      private repository in step with these.
+- [x] Microsoft Store URL in `README.md`, `SUPPORT.md` and
+      `.github/FUNDING.yml`. The Store is the only sales channel.
 - [ ] Confirm the licence text fits how you actually sell (jurisdiction,
-      one-device wording) in `LICENSE.md`, and that it matches the copies the
-      installer shows (`assets/license_es.txt`, `license_en.txt` in the private
+      one-device wording) in `LICENSE.md`, and that it matches the copies shown
+      during setup (`assets/license_es.txt`, `license_en.txt` in the private
       repository).
 - [ ] Add real screenshots to `docs/images/`.
-- [ ] Point the application's updater at this repository (`electron-builder.yml`
-      → `publish.owner` / `publish.repo`).
 - [ ] Turn on Issues, Discussions and private vulnerability reporting; turn off
       Wiki and Projects.
 - [ ] Create the discussion categories, then run the label sync workflow.
 - [ ] Create the `v1.0.0` milestone.
-- [ ] Publish v1.0.0 with installer, `latest.yml`, SHA-256 and notes.
-- [ ] Post the announcement discussion.
-- [ ] Test the whole path yourself on a clean Windows machine: download →
-      install → update check → report a bug from inside the application.
+- [ ] Publish v1.0.0 through the Microsoft Store (Partner Center), then post the
+      announcement discussion.
+- [ ] Test the whole path yourself on a clean Windows machine: install from the
+      Store → get a Store update → report a bug from inside the application.
