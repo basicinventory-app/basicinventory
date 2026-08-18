@@ -17,12 +17,17 @@ application, or whether you use it at all.
 
 Exactly two things, both visible and both avoidable:
 
-### 1. The update check
+### 1. The update check — direct download only
 
-On startup the application asks GitHub whether a newer release exists. It is an
-anonymous, read-only request to a public API. GitHub, like any web server, sees
-the request and your IP address; BasicInventory sends nothing about you or your
-data.
+On the **direct download**, the application asks GitHub on startup whether a newer
+release exists. It is an anonymous, read-only request to a public API. GitHub,
+like any web server, sees the request and your IP address; BasicInventory sends
+nothing about you or your data.
+
+The **Microsoft Store** build makes no such check: Windows updates it the way it
+updates every Store app, so this request does not happen at all. On a Store
+install the only thing that ever leaves your machine is an AI question you choose
+to ask, below.
 
 ### 2. Your questions to the AI assistant — only if you enable it
 
@@ -84,8 +89,11 @@ assistant and ask a question that includes it.
 
 ## Purchases
 
-Buying a licence happens on the store platform, which handles your payment
-details under its own privacy policy. Those details never reach the application.
+Buying a licence happens on the store platform — the Microsoft Store, eBay or
+Gumroad — which handles your payment details under its own privacy policy. Those
+details never reach the application. A Microsoft Store purchase is tied to your
+Microsoft account by Microsoft, not by BasicInventory; the application receives
+no account information.
 
 ## Children
 

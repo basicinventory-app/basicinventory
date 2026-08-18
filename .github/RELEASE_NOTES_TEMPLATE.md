@@ -36,6 +36,10 @@ One or two sentences: the headline of this release, in plain language.
 
 ### 📦 Download
 
+Installed from the **[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM)**?
+Windows updates you automatically — there is nothing to download here. The files
+below are the **direct download**, which updates itself and is verified by hand.
+
 | File | Purpose |
 | --- | --- |
 | `BasicInventory-Setup-X.Y.Z.exe` | Installer (Windows 10/11, 64-bit) |
@@ -57,7 +61,7 @@ Get-FileHash .\BasicInventory-Setup-X.Y.Z.exe -Algorithm SHA256
 
 - Requires Windows 10 or 11, 64-bit. See the [system requirements](https://github.com/basicinventory-app/basicinventory#system-requirements).
 - Installing over an existing version keeps your database and settings.
-- The installer is not code-signed yet, so Windows SmartScreen may warn — check the hash above.
+- The direct-download installer is not code-signed yet, so Windows SmartScreen may warn — check the hash above. The Microsoft Store build is signed and skips this.
 - Something wrong? [Report it](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) with **Settings → Errors and diagnostics → Copy diagnostics**.
 
 **Full changelog:** https://github.com/basicinventory-app/basicinventory/compare/vA.B.C...vX.Y.Z

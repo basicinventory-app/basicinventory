@@ -13,6 +13,16 @@ Versions are dated `YYYY-MM-DD`.
 
 ### Added
 
+- **BasicInventory is on the Microsoft Store**, now the main way to get it:
+  [apps.microsoft.com](https://apps.microsoft.com/detail/9N8GQS365ZLM). Buying and
+  installing are one step; Microsoft signs the package, so there is no SmartScreen
+  warning; Windows keeps it updated; and the copy is sold already licensed, tied
+  to your Microsoft account, with no key to paste. It is the same application as
+  the direct download — same screens, same rules, same local data — differing only
+  in how it is bought, installed, updated and licensed. The direct download
+  (eBay/Gumroad + the installer here, activated with a `BI1-` key) stays available
+  as an alternative. See
+  [Two ways to get it](https://github.com/basicinventory-app/basicinventory/blob/main/docs/microsoft-store.md).
 - **A demo you can use in your browser**, at
   [demo.basicinventory.app](https://demo.basicinventory.app). It is the whole
   application — the same screens and the same rules — running in a tab on a

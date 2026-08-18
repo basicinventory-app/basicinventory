@@ -5,6 +5,7 @@
 **Desktop inventory management for small businesses.**
 Fast, offline-first, no subscription required.
 
+[![Microsoft Store](https://img.shields.io/badge/Microsoft%20Store-get%20it-0d9488)](https://apps.microsoft.com/detail/9N8GQS365ZLM)
 [![Latest release](https://img.shields.io/github/v/release/basicinventory-app/basicinventory?label=latest&color=0d9488)](https://github.com/basicinventory-app/basicinventory/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/basicinventory-app/basicinventory/total?color=0d9488)](https://github.com/basicinventory-app/basicinventory/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0d9488)](#system-requirements)
@@ -13,7 +14,7 @@ Fast, offline-first, no subscription required.
 [![Issues](https://img.shields.io/github/issues/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/issues)
 [![Discussions](https://img.shields.io/github/discussions/basicinventory-app/basicinventory?color=0d9488)](https://github.com/basicinventory-app/basicinventory/discussions)
 
-[Try the demo](https://demo.basicinventory.app) · [Buy](https://www.ebay.es/itm/318673321758) · [Download](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
+[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) · [Try the demo](https://demo.basicinventory.app) · [Other ways to get it](#download) · [Report a bug](https://github.com/basicinventory-app/basicinventory/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/basicinventory-app/basicinventory/issues/new?template=feature_request.yml) · [Ask a question](https://github.com/basicinventory-app/basicinventory/discussions) · [What's next](#whats-next)
 
 </div>
 
@@ -71,8 +72,24 @@ updates and keeping your data. Those are the application.
 
 ## Download
 
-Every official build lives on the [Releases](https://github.com/basicinventory-app/basicinventory/releases)
-page.
+There are two ways to get BasicInventory. They install two different builds of
+the **same application** — see [Two ways to get it](docs/microsoft-store.md) for
+the full comparison.
+
+### The Microsoft Store — recommended
+
+**[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM)**
+
+Buying and installing are one step. Microsoft signs the package, so there is no
+SmartScreen warning; the Store keeps it updated; and the copy is **sold already
+licensed** — there is no key to paste. This is the simplest path and the one most
+people should take.
+
+### The direct download — an alternative
+
+Buy the licence on [eBay or Gumroad](#buying-a-licence), then download the
+installer from the [Releases](https://github.com/basicinventory-app/basicinventory/releases)
+page and activate it with your `BI1-` key.
 
 1. Open the [latest release](https://github.com/basicinventory-app/basicinventory/releases/latest).
 2. Download `BasicInventory-Setup-x.y.z.exe`.
@@ -80,13 +97,17 @@ page.
 
 **Releases contain official binaries only** — the installer, its update metadata
 (`latest.yml`) and the release notes. No source code is published here (see
-[below](#is-this-repository-the-source-code)).
-
-Verify what you downloaded: each release lists the SHA-256 of the installer.
+[below](#is-this-repository-the-source-code)). This installer is not code-signed,
+so Windows SmartScreen may warn about the publisher; verify the SHA-256 each
+release lists.
 
 ```powershell
-Get-FileHash .\BasicInventory-Setup-1.0.4.exe -Algorithm SHA256
+Get-FileHash .\BasicInventory-Setup-1.0.5.exe -Algorithm SHA256
 ```
+
+The Store copy and a direct-download copy are two different modes: a Store
+purchase is not a `BI1-` key, and a `BI1-` key is not a Store purchase. Pick one
+way to install and stay on it.
 
 ## System requirements
 
@@ -103,10 +124,23 @@ Windows on ARM is not supported. There is no macOS or Linux build.
 
 ## Installation
 
+### From the Microsoft Store
+
+Open the [Store listing](https://apps.microsoft.com/detail/9N8GQS365ZLM) and
+select **Get**. Windows downloads, installs and pins it — no SmartScreen warning,
+no administrator rights, nothing to run by hand. It is **already licensed**, so
+first launch goes straight to setup: your language, your company name and whether
+you manage stock **by boxes or by pallets**, then the guided tour. There is no
+key to enter. To remove it later, use **Windows Settings → Apps** like any Store
+app.
+
+### From the direct download
+
 1. Run `BasicInventory-Setup-x.y.z.exe`.
-2. Windows SmartScreen may warn about an unrecognised publisher while the
-   application is not yet code-signed. Choose **More info → Run anyway** if you
-   trust the download, and check the SHA-256 above first.
+2. Windows SmartScreen may warn about an unrecognised publisher while this build
+   is not yet code-signed. Choose **More info → Run anyway** if you trust the
+   download, and check the SHA-256 above first. (The Store build is signed and
+   does not do this.)
 3. Accept the licence terms, and choose the installation folder if you do not
    want the default one.
 4. The installer needs **no administrator rights** and installs for the current
@@ -117,26 +151,46 @@ Windows on ARM is not supported. There is no macOS or Linux build.
 
 ## Activating your licence
 
-The download is free; the **licence key** is what you buy. After the first-run
-setup, BasicInventory asks for it.
+BasicInventory is licensed one way per install, decided by where you got it.
+
+**From the Microsoft Store** the copy is sold already licensed: the licence is
+your Store purchase, tied to your Microsoft account, and there is no key to enter
+and nothing to activate. Reinstall it — or install it on another PC signed in
+with the same Microsoft account — and it is licensed again from the Store.
+
+**From the direct download** the download is free and the **licence key** is what
+you buy:
 
 - The key arrives with your purchase, in the store's delivery message. It starts
   with `BI1-`.
 - Activation happens **on your computer, offline**: nothing is sent anywhere, and
   no account or registration is involved.
-- **Without a key the application cannot be used.** After the first-run setup it
-  shows the activation screen and waits for the key; there is no trial mode and
-  no read-only mode. Your data is never destroyed by this — activate later and
+- **Without a key this build cannot be used.** After the first-run setup it shows
+  the activation screen and waits for the key; there is no trial mode and no
+  read-only mode. Your data is never destroyed by this — activate later and
   everything is where you left it — but the interface stays behind that screen.
-  To see everything working before you buy, use the browser demo:
-  [demo.basicinventory.app](https://demo.basicinventory.app).
 - The key stays with your data: restoring a backup on another computer carries
   the licence with it.
-- Settings shows which e-mail and order the copy is licensed to.
+- Settings shows which e-mail and order the copy is licensed to. Lost your key?
+  Ask through the store you bought from — your order is there.
 
-Lost your key? Ask through the store you bought from — your order is there.
+Either way, to see everything working before you buy, use the browser demo:
+[demo.basicinventory.app](https://demo.basicinventory.app).
 
-Your data lives in `%APPDATA%\BasicInventory`:
+## Your data and backups
+
+BasicInventory stores your inventory **only on your computer**, and both builds
+back it up the same way — from inside the app, so it never depends on where the
+files sit. Use **Settings → Backups → Create backup now**, and a copy is also
+written automatically every time you close the application. Backups start out in
+`Documents\BasicInventory\Copias de seguridad` — a folder you choose, outside the
+application, easy to find, copy or sync — and moving to another computer is:
+back up, copy the file across, restore it there. That works whichever way either
+computer was installed.
+
+The exact folder holding the live database and logs is always shown in
+**Settings → Errors and diagnostics**. On the **direct download** it is
+`%APPDATA%\BasicInventory`:
 
 | Path | What it is |
 | --- | --- |
@@ -144,21 +198,27 @@ Your data lives in `%APPDATA%\BasicInventory`:
 | `logs\basicinventory.log` | Error log used by **Settings → Errors and diagnostics** |
 | `.secret.key` | Local key that encrypts your AI provider key |
 
-Backups go where you tell them to, and start out in
-`Documents\BasicInventory\Copias de seguridad` — outside the installation, so
-they survive uninstalling and are easy to find, copy or sync.
+The **Store** build keeps the same files in its own per-user app folder (Windows
+manages it for packaged apps); the diagnostics screen shows you the path, and the
+in-app backup is the supported way to reach the data either way.
 
-**Uninstalling asks** whether to delete your data as well, and keeping it is the
-preselected answer. Choose to keep it and a reinstall picks up exactly where you
-left off. Your backups folder is never touched either way.
+Removing the direct download **asks** whether to delete your data, with keeping it
+preselected — reinstall and you pick up where you left off. Removing the Store
+build follows Windows' own rule for Store apps. Your backups folder, being
+outside the application, is never touched either way.
 
 Full walkthrough: [docs/getting-started.md](docs/getting-started.md).
 
 ## Updates
 
-**Updates are offered, never imposed.** BasicInventory checks this repository's
-Releases on startup, and if there is a newer version it tells you — a strip at
-the top of the window, never a dialog over what you are doing.
+**From the Microsoft Store, updates are automatic.** Windows keeps the Store copy
+current in the background, the way it does every Store app; you never fetch or
+install anything by hand. The rest of this section is about the **direct
+download**, which updates itself from this repository.
+
+**Updates are offered, never imposed.** The direct-download build checks this
+repository's Releases on startup, and if there is a newer version it tells you — a
+strip at the top of the window, never a dialog over what you are doing.
 
 You then choose:
 
@@ -250,20 +310,23 @@ welcome (which is quite a lot: reports, ideas, documentation corrections).
 ## Buying a licence
 
 BasicInventory is commercial software. One purchase, one perpetual licence for
-the version line you bought — no subscription.
+the version line you bought — no subscription. The price is the same wherever you
+buy; the difference is how the licence reaches you.
 
-**The download is free; the key is what is sold.** Anyone can install it and
-look around; recording stock needs a licence. See
+| Where | Link | What you get |
+| --- | --- | --- |
+| **Microsoft Store** (recommended) | **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM)** | Buy and install in one step. Licensed to your Microsoft account, no key. Signed, auto-updating. |
+| eBay (Spanish listing) | [Buy on eBay](https://www.ebay.es/itm/318673321758) | A `BI1-` key for the direct download. |
+| eBay (English listing) | [Buy on eBay](https://www.ebay.es/itm/318673323733) | A `BI1-` key for the direct download. |
+| Gumroad | [Buy on Gumroad](https://xabier6.gumroad.com/l/basicinventory) | A `BI1-` key for the direct download. |
+
+The Microsoft Store is the main channel: it is the least to think about, and the
+copy arrives signed, already licensed and kept up to date. The eBay and Gumroad
+listings sell a `BI1-` key for the direct download instead — the same
+application, activated by hand. The two eBay listings are the same product and
+differ only in the language of the description; pick whichever you read more
+comfortably. See [Two ways to get it](docs/microsoft-store.md) and
 [Activating your licence](#activating-your-licence).
-
-| Where | Link |
-| --- | --- |
-| eBay (Spanish listing) | **[Buy on eBay](https://www.ebay.es/itm/318673321758)** |
-| eBay (English listing) | **[Buy on eBay](https://www.ebay.es/itm/318673323733)** |
-| Gumroad | **[Buy on Gumroad](https://xabier6.gumroad.com/l/basicinventory)** |
-
-The two eBay listings are the same product; they differ only in the language of
-the description. Pick whichever you read more comfortably.
 
 Anything about a purchase — invoices, refunds, volume or reseller enquiries —
 goes through the store you bought from, using its message system: your order
@@ -278,9 +341,13 @@ computer**, in a local SQLite database.
 
 | What leaves your machine | When | To whom |
 | --- | --- | --- |
-| An update check | On startup | GitHub (public Releases API) |
+| An update check | On startup, **direct download only** | GitHub (public Releases API) |
 | Your question plus the inventory data needed to answer it | Only if you enable the AI assistant, only when you ask something | The AI provider **you** configured |
 | Nothing else | — | — |
+
+The Store build makes no update check of its own — Windows updates it — so on a
+Store install the only thing that ever leaves your machine is an AI question you
+choose to ask.
 
 - **No telemetry, no analytics, no crash uploads.** Errors are written to a local
   log file; you decide whether to attach it to a report.
@@ -313,9 +380,12 @@ updates within that line are included.
 <details>
 <summary><strong>Where is my data, and how do I move it to another computer?</strong></summary>
 
-In `%APPDATA%\BasicInventory\basicinventory.db`. Use **Settings → Backups →
-Create backup now**, copy the `.db` file across, and restore it from the same
-screen on the new machine.
+Use **Settings → Backups → Create backup now**, copy the file across, and restore
+it from the same screen on the new machine — that works whichever way either
+computer was installed, and is the supported route. The live database sits in
+`%APPDATA%\BasicInventory\basicinventory.db` on the direct download, or in the
+Store build's own per-user folder; either exact path is shown in **Settings →
+Errors and diagnostics**.
 </details>
 
 <details>
@@ -343,11 +413,23 @@ that usage, and the app says so on the screen.
 </details>
 
 <details>
+<summary><strong>Should I use the Microsoft Store or the direct download?</strong></summary>
+
+The Store, unless you have a reason not to. It buys and installs in one step, the
+package is signed (no SmartScreen warning), it updates itself, and it arrives
+already licensed — there is no key to paste. The direct download exists for
+buying a `BI1-` key on eBay or Gumroad and activating by hand. They are two
+different modes of the same application; a Store purchase is not a key, and a key
+is not a Store purchase. See [Two ways to get it](docs/microsoft-store.md).
+</details>
+
+<details>
 <summary><strong>Why does Windows warn me when I install it?</strong></summary>
 
-The installer is not code-signed yet, so SmartScreen does not recognise the
-publisher. Code signing is planned. Until then, verify the
-SHA-256 published with each release.
+Only the **direct download** does this: that installer is not code-signed yet, so
+SmartScreen does not recognise the publisher — verify the SHA-256 published with
+each release, then **More info → Run anyway**. The **Microsoft Store** build is
+signed by Microsoft and installs with no warning.
 </details>
 
 <details>

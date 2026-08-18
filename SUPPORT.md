@@ -23,10 +23,15 @@ to be a bug.
 
 ### Purchases and licensing
 
-BasicInventory is sold on eBay ([Spanish](https://www.ebay.es/itm/318673321758) · [English](https://www.ebay.es/itm/318673323733)) and on
-[Gumroad](https://xabier6.gumroad.com/l/basicinventory). Use the message system of the platform you bought from — that
-reaches the author with your order attached, and it is also the channel that
-platform's buyer protection recognises.
+BasicInventory is sold on the
+[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) (the main
+channel), on eBay ([Spanish](https://www.ebay.es/itm/318673321758) · [English](https://www.ebay.es/itm/318673323733)) and on
+[Gumroad](https://xabier6.gumroad.com/l/basicinventory). Anything about a
+purchase, refund or invoice goes through the platform you bought from — for the
+Store, that is Microsoft's own purchase and refund support; for eBay or Gumroad,
+their message systems, which reach the author with your order attached and are
+the channel each platform's buyer protection recognises. See
+[Two ways to get it](docs/microsoft-store.md) for how the two differ.
 
 Nothing about a purchase belongs in a public issue: order numbers, invoices,
 addresses and licence keys stay off this repository.

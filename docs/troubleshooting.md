@@ -15,9 +15,12 @@ saves a full round of questions.
 ## Installation and startup
 
 **Windows SmartScreen blocks the installer.**
-The installer is not code-signed yet, so Windows does not recognise the
-publisher. Verify the SHA-256 published with the release, then **More info → Run
-anyway**. Code signing is planned.
+This is the **direct download** only: that installer is not code-signed yet, so
+Windows does not recognise the publisher. Verify the SHA-256 published with the
+release, then **More info → Run anyway**. Code signing is planned. To avoid it
+entirely, install the signed build from the
+[Microsoft Store](https://apps.microsoft.com/detail/9N8GQS365ZLM) —
+see [Two ways to get it](microsoft-store.md).
 
 **Your antivirus quarantines the installer or the application.**
 A false positive on unsigned Electron applications. Verify the hash, then add an
@@ -59,8 +62,11 @@ renamed file if you change your mind.
 ## Updates
 
 **The application never offers an update.**
-Check [Releases](https://github.com/basicinventory-app/basicinventory/releases)
-manually. A corporate proxy or firewall blocking `api.github.com` prevents the
+If you installed from the **Microsoft Store**, that is expected: Windows updates
+it in the background and the app never offers updates itself. On the **direct
+download**, check
+[Releases](https://github.com/basicinventory-app/basicinventory/releases)
+manually — a corporate proxy or firewall blocking `api.github.com` prevents the
 check; installing over the existing version keeps your data.
 
 **The update downloaded but did not install.**

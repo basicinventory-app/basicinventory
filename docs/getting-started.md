@@ -4,13 +4,24 @@ From installer to a warehouse you can actually use, in about twenty minutes.
 
 ## 1. Install
 
+There are [two ways to get it](microsoft-store.md). Pick one.
+
+**From the Microsoft Store (recommended).** Open the
+[Store listing](https://apps.microsoft.com/detail/9N8GQS365ZLM) and select
+**Get**. Windows installs and pins it — signed, no SmartScreen warning, no
+administrator rights — and the copy is **already licensed**, so first run goes
+straight to setup below with no key to enter.
+
+**From the direct download.**
+
 1. Download `BasicInventory-Setup-x.y.z.exe` from the
    [latest release](https://github.com/basicinventory-app/basicinventory/releases/latest).
 2. Check the SHA-256 published with the release:
    `Get-FileHash .\BasicInventory-Setup-x.y.z.exe -Algorithm SHA256`.
 3. Run it. No administrator rights are needed; it installs for your user only.
-4. Windows SmartScreen may warn about an unknown publisher while the installer is
-   not code-signed — **More info → Run anyway** once the hash matches.
+4. Windows SmartScreen may warn about an unknown publisher while this build is
+   not code-signed — **More info → Run anyway** once the hash matches. (The Store
+   build is signed and skips this.)
 
 ## 2. First run
 
@@ -28,13 +39,13 @@ The setup asks three things:
    screens show; both modes store the same thing, and you can switch at any time
    in **Settings → Management mode** without migrating anything.
 
-Then BasicInventory asks for your **licence key** — the one that came with your
-purchase, starting with `BI1-`. It is checked on your computer, offline: nothing
-is sent anywhere and there is no account to create.
-
-Without a key the application stops here: the activation screen stays until a
-valid key is entered, so there is nothing to explore first. Settings later shows
-which e-mail and order the copy is licensed to.
+**On the direct download**, BasicInventory then asks for your **licence key** —
+the one that came with your eBay or Gumroad purchase, starting with `BI1-`. It is
+checked on your computer, offline: nothing is sent anywhere and there is no
+account to create. Without a key this build stops here — the activation screen
+stays until a valid key is entered — and Settings later shows which e-mail and
+order the copy is licensed to. **On the Microsoft Store build there is no key**:
+it is licensed by your purchase and goes straight on.
 
 Then take the guided tour. It walks the real screens with sample data and can be
 replayed from the **?** button in the top bar.
