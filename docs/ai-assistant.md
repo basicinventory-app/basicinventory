@@ -95,6 +95,11 @@ application only ever displays a masked hint of it.
 If your inventory data is sensitive enough that it must not reach a third party,
 simply do not configure the assistant: every other feature works without it.
 
+The provider you configure here is also the one used by the **AI assistant of
+the 3D map** (inside *Edit layout*), which rearranges racks from a sentence. That
+one sends a summary of your aisles and the map layout, never products or stock —
+see [3D warehouse map](warehouse-map.md).
+
 ## Troubleshooting
 
 **"Invalid API key"** — regenerate it at the provider and paste it again; keys

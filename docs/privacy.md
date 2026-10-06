@@ -3,7 +3,7 @@
 BasicInventory is offline-first. Your inventory is stored **on your computer**,
 in a local database, and is not sent anywhere.
 
-Last updated: 2026-08-18.
+Last updated: 2026-10-05.
 
 ## What is collected
 
@@ -15,8 +15,9 @@ application, or whether you use it at all.
 
 ## What leaves your computer, and when
 
-Exactly one thing, visible and avoidable: a question you send to the AI
-assistant, and only if you enable it. The application makes **no update check of
+Exactly one thing, visible and avoidable: a request you send to an AI
+assistant — the inventory assistant or the 3D map's layout assistant — and only
+if you enable it. The application makes **no update check of
 its own** — Windows updates it through the Microsoft Store — so nothing leaves
 your machine on startup or in the background.
 
@@ -32,6 +33,20 @@ That exchange is governed by your agreement with that provider. BasicInventory i
 not an intermediary: it neither sees nor stores those exchanges.
 
 Do not want that? Do not configure the assistant. Everything else works.
+
+### The 3D map's layout assistant — only if you use it
+
+Inside **3D map → Edit layout**, the optional AI assistant uses the same
+provider and credentials. Each message sends to that provider:
+
+- your messages in that chat,
+- a summary of the warehouse's structure: aisle codes, how many columns, levels
+  and locations each aisle has, zone names and a few sample location codes,
+- the current map layout: positions, rotations and measurements of the racks.
+
+It sends **no products, quantities, lots, expiry dates or movements**. The
+conversation is not stored by BasicInventory; it disappears when you leave the
+editor.
 
 ## Where your data is stored
 

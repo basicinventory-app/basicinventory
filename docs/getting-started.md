@@ -66,6 +66,9 @@ Categories group reporting; they are not a place for detail.
 Use the labels already painted on your shelves. If the shelf says B-3-1, call it
 B-3-1 — matching reality beats a tidier scheme nobody uses.
 
+Once your locations exist, **3D map** in the sidebar draws them as racks — see
+[3D warehouse map](warehouse-map.md).
+
 ### Products
 
 **Products → New**:
@@ -133,6 +136,7 @@ machine.
 ## Next
 
 - [Backups and restore](backups.md)
+- [3D warehouse map](warehouse-map.md)
 - [AI assistant](ai-assistant.md)
 - [Troubleshooting](troubleshooting.md)
 - [Privacy](privacy.md)

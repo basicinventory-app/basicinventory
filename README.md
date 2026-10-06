@@ -26,6 +26,10 @@ and without a monthly bill.
 
 - **Products, categories and locations** — a catalogue plus a warehouse layout of
   aisle / column / height positions.
+- **3D warehouse map** — your locations drawn as racks in 3D, with nothing to
+  draw. Walk the aisles with the arrow keys, click a shelf to open its stock,
+  and adjust the layout when you need to — by hand or, optionally, by telling
+  the AI assistant. See [the guide](docs/warehouse-map.md).
 - **Stock, two ways** — manage goods **by boxes** (stock per location) or **by
   pallets** (full SSCC detail). One data model, two presentations; switch at any
   time from Settings, with no migration and no data loss.
@@ -67,6 +71,10 @@ updates and keeping your data. Those are the application.
 | Movements | AI assistant |
 | --- | --- |
 | ![Movement history: entries, exits, adjustments and transfers](docs/images/screenshot-movements.png) | ![The assistant answering a stock question with a table](docs/images/screenshot-assistant.png) |
+
+| 3D warehouse map |
+| --- |
+| ![The 3D warehouse map: racks drawn from the locations, a shelf selected and its location shown](docs/images/screenshot-warehouse-map.png) |
 
 ## Get BasicInventory
 
@@ -230,9 +238,10 @@ computer**, in a local SQLite database.
 | What leaves your machine | When | To whom |
 | --- | --- | --- |
 | Your question plus the inventory data needed to answer it | Only if you enable the AI assistant, only when you ask something | The AI provider **you** configured |
+| Your message plus a summary of your aisles and the map layout (no products or stock) | Only when you use the AI assistant of the 3D map | The AI provider **you** configured |
 | Nothing else | — | — |
 
-The only thing that ever leaves your machine is an AI question you choose to ask.
+The only thing that ever leaves your machine is an AI request you choose to make.
 The application makes no update check of its own — Windows updates it through the
 Store.
 

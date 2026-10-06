@@ -34,6 +34,8 @@ the application at:
 | [Tailwind CSS](https://tailwindcss.com/) | MIT | Styling |
 | [Radix UI](https://www.radix-ui.com/) | MIT | Accessible interface primitives |
 | [Lucide](https://lucide.dev/) | ISC | Icons |
+| [three.js](https://threejs.org/) | MIT | 3D rendering of the warehouse map |
+| [React Three Fiber](https://r3f.docs.pmnd.rs/) | MIT | React bindings for the 3D map |
 | [TanStack Query / Table](https://tanstack.com/) | MIT | Data fetching and tables |
 | [Zod](https://zod.dev/) | MIT | Input validation |
 | [pino](https://getpino.io/) | MIT | Logging |

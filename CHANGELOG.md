@@ -41,6 +41,41 @@ updated automatically. Versions are dated `YYYY-MM-DD`.
 
 ---
 
+## [1.0.6] — 2026-10-05
+
+### Added
+
+- **3D warehouse map.** A new **3D map** screen draws your warehouse from the
+  locations you already have — one rack per aisle, one bay per column, one shelf
+  per level, each zone in its own colour. There is nothing to draw.
+  - **It opens for browsing**: orbit, zoom and pan with the mouse, walk the
+    aisles with the arrow keys or W A S D (Shift to go faster, Q and E to turn),
+    and switch between a 3D view and a floor plan. Click any shelf to see which
+    location it is and open its stock; when you come back, the camera is where
+    you left it.
+  - **Edit layout**, when you need it: drag racks, rotate them, hide them, and
+    set bay width, depth, level height and the gap between aisles in metres —
+    for one aisle, several, or the whole warehouse. Everything can be undone,
+    and leaving with unsaved changes asks first.
+  - **AI assistant for the layout** (optional, with your own provider key): a
+    chat beside the map. Describe the change in your own words and it is
+    applied at once; undo it if you don't like it. Nothing is saved until you
+    press Save.
+  - The map only draws your locations: it never creates, renames or deletes
+    one, and a line above it tells you if any location is not on the map yet.
+  - Not yet: shelves are coloured by zone, not by how full they are.
+  - Guide: [3D warehouse map](docs/warehouse-map.md).
+
+### Privacy
+
+- The map's AI assistant, if you use it, sends your messages in that chat and a
+  summary of the warehouse's structure (aisle codes, column and level counts,
+  zone names, a few sample location codes) plus the current layout to the AI
+  provider you configured. It sends no products, quantities, lots or movements.
+  See [privacy](docs/privacy.md).
+
+---
+
 ## [1.0.5] — 2026-08-10
 
 ### Fixed
